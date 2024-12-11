@@ -15,12 +15,12 @@ router.register(
     r'posts/(?P<post_id>\d+)/comments',
     CommentViewSet,
     basename='list_comments'
-    )
+)
 router.register(
     r'posts/(?P<post_id>\d+)/comments/(?P<comment_id>\d+)',
     CommentViewSet,
     basename='comments'
-    )
+)
 
 
 urlpatterns = [
