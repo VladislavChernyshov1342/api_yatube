@@ -67,4 +67,4 @@ class Comment(models.Model):
             f'{self.text[:TEXT_PREVIEW_LENGTH]},'
             f'относится к автору {self.author}'
             f'и посту {self.post}'
-            )
+        )
