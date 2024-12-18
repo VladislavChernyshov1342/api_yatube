@@ -22,11 +22,11 @@ class BaseSerializer(serializers.ModelSerializer):
 class PostSerializer(BaseSerializer):
     class Meta:
         model = Post
-        fields = ('id', 'text', 'pub_date', 'author', 'image', 'group')
+        fields = '__all__'
 
 
 class CommentSerializer(BaseSerializer):
     class Meta:
         model = Comment
-        fields = ('id', 'author', 'post', 'text', 'created')
+        fields = '__all__'
         read_only_fields = ('post',)
