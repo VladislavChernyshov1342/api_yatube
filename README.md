@@ -30,3 +30,11 @@ source venv/Scripts/activate      # для Windows
 # или
 source venv/bin/activate          # для MacOS/Linux
 pip install -r requirements.txt
+```
+Затем выполните миграции, создайте суперпользователя и запустите сервер разработки:
+```bash
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
